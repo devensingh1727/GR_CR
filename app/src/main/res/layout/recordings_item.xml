@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="7dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:id="@+id/ll_recordings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/button_selector">
+
+        <ImageView
+            android:id="@+id/call_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/call_outgoing"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_outgoing" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/callerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:text="Contact Name"
+                android:textColor="@color/secondary_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/recording_formate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="AMR"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/recording_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="32 kb"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/recording_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="27 Jan, 23:05:05"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/more_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@mipmap/ic_menu_popup" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:text="@string/company_name"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/primary_dark"
+            android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/website_link"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_selector1"
+            android:drawableLeft="@mipmap/ic_web_link"
+            android:drawablePadding="15dp"
+            android:gravity="left|center_vertical"
+            android:padding="15dp"
+            android:text="Website Link"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/fb_link"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_selector1"
+            android:drawableLeft="@mipmap/ic_fb_icon"
+            android:drawablePadding="15dp"
+            android:gravity="left|center_vertical"
+            android:padding="15dp"
+            android:text="Facebook Link"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/support_num"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_selector1"
+            android:drawableLeft="@mipmap/ic_support"
+            android:drawablePadding="15dp"
+            android:gravity="left|center_vertical"
+            android:padding="15dp"
+            android:text="Support"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:text="@string/copy_right"
+            android:textColor="@color/secondary_text"
+            android:textSize="15sp" />
+</RelativeLayout>

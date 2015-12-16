@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/navigation_item_1"
+            android:icon="@mipmap/ic_recording_file"
+            android:title="Recording Files" />
+        <item
+            android:id="@+id/navigation_item_2"
+            android:icon="@mipmap/ic_setting"
+            android:title="Settings" />
+        <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@mipmap/ic_feedback"
+            android:title="Feedback" />
+
+        <item
+            android:id="@+id/navigation_item_4"
+            android:icon="@mipmap/ic_help"
+            android:title="Help" />
+
+        <item
+            android:id="@+id/navigation_item_5"
+            android:icon="@mipmap/ic_about"
+            android:title="About Us" />
+    </group>
+
+</menu>

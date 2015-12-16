@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="7dp">
+
+    <EditText
+        android:id="@+id/feedback_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:hint="Write here!!"
+        android:background="@drawable/editbox_bg"/>
+    <!--<Button-->
+        <!--android:id="@+id/send_feedback"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/button_selector1"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:layout_marginBottom="15dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="Send FeedBack"-->
+        <!--android:textColor="@android:color/white"/>-->
+
+</ScrollView>

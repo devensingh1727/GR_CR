@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <gradient android:angle="180" android:endColor="@color/primary_dark" android:startColor="@color/primary" />
+                </shape>
+            </item>
+            <item>
+                <bitmap android:gravity="center" android:src="@mipmap/ic_pause" />
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_checked="false">
+        <layer-list>
+
+            <item>
+                <shape android:shape="oval">
+                    <gradient android:angle="180" android:endColor="@color/primary_dark" android:startColor="@color/primary" />
+                </shape>
+            </item>
+            <item>
+                <bitmap android:gravity="center" android:src="@mipmap/ic_play" />
+            </item>
+        </layer-list>
+    </item>
+
+
+</selector>

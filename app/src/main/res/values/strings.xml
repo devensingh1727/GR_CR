@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="company_name">GLOBAL RADIANT</string>
+    <string name="app_name">Call Recorder</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="action_play">Play</string>
+    <string name="action_share">Share</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_select_all">Select All</string>
+    <string name="action_select_none">Select None</string>
+    <string name="action_select_inverse">Select Inverse</string>
+    <string name="outgoing_call">outgoing</string>
+    <string name="incoming_call">incoming</string>
+    <string name="action_settings">Settings</string>
+    <string name="audio">Audio</string>
+    <string name="audio_source">Audio Source</string>
+    <string name="audio_channel">Audio Channel</string>
+    <string name="audio_format">Audio Format</string>
+    <string name="password_protection">Password Protection</string>
+    <string name="password">Password</string>
+    <string name="automatic_speaker">Automatic Speaker</string>
+    <string name="change_password">Set Password</string>
+    <string name="banner_ads_id">ca-app-pub-8528187483717965/9229082533</string>
+    <string name="full_page_ads_id">ca-app-pub-8528187483717965/1705815734</string>
+    <string name="copy_right">©2015 Global Radiant, All Rights Reserved.</string>
+
+</resources>
