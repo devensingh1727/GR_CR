@@ -317,6 +317,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
     private void initializeToolbar() {
         if (toolbar != null)
             setSupportActionBar(toolbar);
+        //dev changes
     }
 
     @Override
