@@ -39,7 +39,6 @@ import java.util.Map;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-
 public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
 
     @Bind(R.id.drawer_layout)
@@ -95,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         if (permissionsList.size() > 0) {
             if (permissionsNeeded.size() > 0) {
                 // Need Rationale
-                String message = "You need to grant access to " + permissionsNeeded.get(0)+" to work application properly.";
+                String message = "You need to grant access to " + permissionsNeeded.get(0) + " to work application properly.";
                 for (int i = 1; i < permissionsNeeded.size(); i++)
                     message = message + ", " + permissionsNeeded.get(i);
                 showMessageOKCancel(message,

@@ -18,10 +18,6 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
 import com.grt.callrecorder.R;
 import com.grt.callrecorder.utilities.MusicPlayerUtility;
 
@@ -52,10 +48,6 @@ public class MusicPlayerActivity extends AppCompatActivity implements OnSeekBarC
     private MusicPlayerUtility playerUtils;
     private Bundle extras;
     private String recordingFilePath;
-    @Bind(R.id.adView)
-    AdView adView;
-    private InterstitialAd fullPageAd;
-    AdRequest adRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,45 +65,6 @@ public class MusicPlayerActivity extends AppCompatActivity implements OnSeekBarC
         mediaPlayer.setOnCompletionListener(this);
         playerUtils = new MusicPlayerUtility();
         playRecordings(recordingFilePath);
-        showBannerAd();
-        initializeFullPageAd();
-    }
-
-    private void initializeFullPageAd() {
-        fullPageAd = new InterstitialAd(this);
-        fullPageAd.setAdUnitId(this.getResources().getString(R.string.full_page_ads_id));
-        adRequest = new AdRequest.Builder()
-                .build();
-        fullPageAdListener();
-        fullPageAd.loadAd(adRequest);
-    }
-
-    private void fullPageAdListener() {
-        fullPageAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                if (fullPageAd.isLoaded())
-                    fullPageAd.show();
-            }
-
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-            }
-        });
-    }
-
-    private void showBannerAd() {
-        final AdListener listener = new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                super.onAdLoaded();
-                adView.setVisibility(View.VISIBLE);
-            }
-        };
-        adView.setAdListener(listener);
-        adView.loadAd(new AdRequest.Builder()
-//                .addTestDevice("EFF77B2A8EDF2355B90B41DE0E46AFD1")
-                .build());
     }
 
     private void initializeToolbar() {

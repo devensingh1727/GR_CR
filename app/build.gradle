@@ -29,5 +29,4 @@ dependencies {
     compile 'com.bowyer.app:fab-toolbar:1.1.0@aar'
     compile project(':library:circualreveal')
     compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.google.android.gms:play-services-ads:8.1.0'
 }
